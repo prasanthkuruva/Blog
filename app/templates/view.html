@@ -1,0 +1,8 @@
+{%extends 'index.html' %} {%block content%} {%for x in posts%}
+<div class="container" style="background-color: aqua;">
+    <h2>{{x.title}} &nbsp; &ensp;
+        <small>{{x.date_added}}</small> </h2>
+    <hr>
+    <medium>{{x.post}}</medium>
+</div>
+<hr>{%endfor%} {%endblock%}
